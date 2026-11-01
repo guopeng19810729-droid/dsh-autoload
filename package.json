@@ -1,0 +1,25 @@
+{
+  "name": "dsh-autoload",
+  "version": "0.2.1",
+  "description": "One-click load-all history for DeepSeek Harness conversations — auto-drives the「加载更早」pager until the session is fully loaded. · 一键加载全部历史对话：自动连点「加载更早」直到加载完。",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "keywords": ["deepseek", "harness", "dsh", "dsh-plugin", "history", "pagination"],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "cordis.patch.yml", "README.md"],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}

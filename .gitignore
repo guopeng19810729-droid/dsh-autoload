@@ -1,0 +1,22 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 本地备份（v0.1.0 等历史版本快照，不入库）
+.bak-*/
+*.bak
+*.bak-*
+
+# 打包产物
+*.tgz
+pkg/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 日志与临时文件
+*.log
+.tmp/

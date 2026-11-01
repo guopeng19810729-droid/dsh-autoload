@@ -1,0 +1,6 @@
+# dsh-autoload bundle patch
+# 纯 insert（id + name），可热挂载免重启。
+# name 必须等于实际包名，否则 cordis 按 name import 会失败。
+- insert:
+    - id: dsh-autoload
+      name: dsh-autoload
